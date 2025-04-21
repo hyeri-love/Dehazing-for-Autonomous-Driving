@@ -6,7 +6,7 @@ if __name__ == "__main__":
     try:
         # 读取雾天图像和参考无雾图像
         dehazed_img = cv2.imread("dehazed_image.jpg")
-        reference_img = cv2.imread("reference.jpg")  # 替换为您的无雾参考图像路径
+        reference_img = cv2.imread("reference.jpg")
 
         if dehazed_img is None or reference_img is None:
             raise ValueError("One of the images could not be loaded. Check the file paths.")
